@@ -5,5 +5,5 @@
 
 # Download the Excel File Here
 
-Live example
+Live example (may take a bit, due to a cold start)
 https://powershell-azure-function-return-excel-filefc3e.azurewebsites.net/api/powershell-azure-function-return-excel-file
