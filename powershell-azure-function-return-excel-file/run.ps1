@@ -10,6 +10,8 @@ if (!(Test-Path $path)) {
 
 $xlfile = "$path\$xlFileName"
 
+$ecd = New-ExcelChartDefinition -XRange TotalSold -YRange Region -Title "Sales Data" -NoLegend
+
 ConvertFrom-Csv @"
 Region,Item,TotalSold
 West,hammer,60
@@ -22,7 +24,7 @@ East,lemon,44
 South,hammer,71
 West,banana,55
 East,nail,25
-"@ | Export-Excel -Path $xlfile
+"@ | Export-Excel -Path $xlfile -AutoSize -AutoNameRange -TableName SalesData -ExcelChartDefinition $ecd
 
 $bytes = Get-Content -AsByteStream $xlfile -Raw
 
