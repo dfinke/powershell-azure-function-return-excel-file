@@ -12,7 +12,7 @@
     "variables": {
         "storageName": "[concat('function', uniqueString(parameters('siteName')))]",
         "contentShareName": "[toLower(parameters('siteName'))]",
-        "repoUrl": "https://github.com/dfinke/powershell-azure-function-helloworld",
+        "repoUrl": "https://github.com/dfinke/powershell-azure-function-return-excel-file",
         "branch": "master"
     },
     "resources": [
