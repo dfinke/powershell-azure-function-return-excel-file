@@ -10,7 +10,7 @@ if (!(Test-Path $path)) {
 
 $xlfile = "$path\$xlFileName"
 
-$ecd = New-ExcelChartDefinition -XRange TotalSold -YRange Region -Title "Sales Data" -NoLegend
+$ecd = New-ExcelChartDefinition -XRange  Region -YRange TotalSold -Title "Sales Data" -NoLegend
 
 ConvertFrom-Csv @"
 Region,Item,TotalSold
