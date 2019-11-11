@@ -33,6 +33,7 @@ Click on the links/buttons pointed to by the red arrows to get the `Function Url
 ![image](./media/Step05.png)
 
 Now that you have the `Url`, you can paste it into a browser to download the workbook.
+[Click here to get the one I generated](https://powershell-azure-function-return-excel-file546f.azurewebsites.net/api/powershell-azure-function-return-excel-file), may take a bit, due to a cold start.
 
 Or use the PowerShell `Invoke-RestMethod` to download the generated Excel file.
 
@@ -41,5 +42,3 @@ $uri = 'https://powershell-azure-function-return-excel-file546f.azurewebsites.ne
 Invoke-RestMethod -Uri $uri -OutFile .\SalesReport.xlsx
 .\SalesReport.xlsx
 ```
-
-[Click here to get the one I generated](https://powershell-azure-function-return-excel-file546f.azurewebsites.net/api/powershell-azure-function-return-excel-file), may take a bit, due to a cold start.
